@@ -10,10 +10,12 @@ class Home extends BaseController {
 
     public function doIndex()
     {
-//        $res = Model('md')->getar();
-//D($res);
+
+        //$shares 获取列表
+        $shares =  Model('shares')->getList();
         view('',[
-            'res'=> $res
+            'shares'    => $shares,
+            'res'       => $res
         ]);
     }
 

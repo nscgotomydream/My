@@ -9,6 +9,7 @@
    
     <!-- Bootstrap -->
     <link href="/assets/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/color.css" rel="stylesheet">
 
 
   <style>
@@ -25,48 +26,65 @@
 
 <div class="container-fluid">
 
-<div class="row">
-  <div class="col-md-12" id="te">
-  
-<div class="list-group">
-  <a href="javascript:void(0)" class="list-group-item active">
-    财富之路
-  </a>
-  <a href="/shares" class="list-group-item">股票 [gu]</a>
-  <a href="/au" class="list-group-item">黄金 [au]</a>
-  <a href="/fund" class="list-group-item">基金 [fund]</a>
+    <div class="row">
+        <div class="col-md-12" id="te">
+        
+            <div class="list-group">
+            <a href="javascript:void(0)" class="list-group-item active">
+            财富之路
+            </a>
+            <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample0" aria-expanded="false" aria-controls="collapseExample0">股票 [shares]</a>
+            <div class="collapse in" id="collapseExample0">
+                <div class="well">
+                	{foreach from=$shares key=key item =item}
+                    <a class="list-group-item" href="/shares?code={$item['code']}">{$item['title']} [ <font class="red">{$item['code']}</font> ]</a>
+                    {/foreach}
+                </div>
+            </div>  
 
-  <a href="/jiebei" class="list-group-item">借呗 [jiebei]</a>
-  <a href="/weilidai" class="list-group-item">微粒贷 [weilidai]</a>
+            <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">基金 [fund]</a>
+            <div class="collapse in" id="collapseExample2">
+                <div class="well">
+                    <a class="list-group-item" href="#collapseExample0">股票</a>
+                    <a class="list-group-item" href="#collapseExample1">黄金 [gold]</a>
+                    <a class="list-group-item" href="#collapseExample2">基金 [fund]</a>
+                </div>
+            </div>
 
-  <a href="/debts" class="list-group-item">债权 [debts]</a>
+            <a class="list-group-item" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">黄金 [gold]</a>
+            <div class="collapse" id="collapseExample1">
+                <div class="well">
+                ...
+                </div>
+            </div>  
+            
+        </div>  
+        
+        
+        </div>
+    </div>
+    
+    
+    
+    
+ 
 
-  <a href="/cerdit" class="list-group-item">信用 [cerdit] [花呗 白条 信用卡]</a>
-  
-  <a href="/cost" class="list-group-item">月固定支出 [cost]</a>
 
-  <a href="/cash" class="list-group-item">现金 [cash]</a>
 
-  <a href="/unionpay" class="list-group-item">8531 [unionpay]</a>
-  
-  <a href="/live" class="list-group-item">生活池 [live]</a>
 
-  <a href="/addall" class="list-group-item">+ [addall]</a>
-  <a href="/reall" class="list-group-item">- [reall]</a>
-
-  <a href="/note" class="list-group-item">备注 [note]</a>
-  
-</div>  
-  
-
-  </div>
 </div>
 
 
 
-</div>
+    <script src="/assets/jquery-1.11.1.min.js"></script>
+    <script src="/assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="/assets/app.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            
+        });
+    </script>
 
-
-
+    
   </body>
 </html>

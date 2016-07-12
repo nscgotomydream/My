@@ -50,6 +50,5 @@ Temporary Items
 .gitignore.bak
 .svn
 .idea
-wwwroot\PhpMyAdmin
-Store
-App\Cache\SmartyTemplates_c\*.*
+_
+__
