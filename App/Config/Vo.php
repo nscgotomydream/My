@@ -14,7 +14,8 @@ return [
         'Db'       => '../App/Config/Db.php',
         'Cookies'  => '../App/Config/Cookies.php',
         'Adminauth'  => '../App/Config/Adminauth.php',
-        'Mmcfile'  => '../App/Config/Mmcfile.php',
+        'Mmcfile'   => '../App/Config/Mmcfile.php',
+        'Addons'    => '../App/Config/Addons.php',
     ],
 
     'Providers'=>[
@@ -27,11 +28,11 @@ return [
         'View'      => Grace\View\View::class,           //
         'Smarty'    => Grace\Smarty\Smarty::class,           //
         'Db'        => Grace\Db\Db::class,           //
-        'Markdown'  => Michelf\Markdown::class,
         'Parsedown' => Parsedown::class,
         'Cookies'   => Grace\Cookies\Cookies::class,
         'Adminauth'   => Grace\Adminauth\Adminauth::class,
         'Mmcfile'   => Grace\Mmcfile\Mmcfile::class,
+        'Addons'   => Grace\Addons\Addons::class,
     ],
 
 ];
