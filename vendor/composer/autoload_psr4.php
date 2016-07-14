@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Lulu\\' => array($vendorDir . '/lulu/db/src'),
     'Grace\\' => array($vendorDir . '/grace/pack/src'),
+    'App\\Addons\\' => array($baseDir . '/App/Addons/src'),
     'App\\' => array($baseDir . '/App'),
 );

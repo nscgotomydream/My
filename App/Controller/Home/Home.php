@@ -10,7 +10,14 @@ class Home extends BaseController {
 
     public function doIndex()
     {
-        app('addons')->addons(\App\Addons\Demo\Demo::class)->router($_GET)->html();     //根据get进行路由,显示界面
+        $root = APPROOT.'Addons/';
+        \App\Addons\Addons::Run();                         //运行
+//or    \App\Addons\Addons::Start('demo.home.index',$params);               //运行
+
+
+
+
+
 
         exit;
 

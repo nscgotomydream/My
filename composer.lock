@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d75426d8f1c324a3c430a0a3829b0e19",
+    "hash": "074426d4501e0a1071737b76a4202bdd",
     "content-hash": "8197a46f1e83c76fa61a6df548604b54",
     "packages": [
         {
@@ -94,12 +94,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "02f95184ab85748deb6a71f4503d5ddce74d2d48"
+                "reference": "e5eebc3cc28d12fea86154341c8139792a086354"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/02f95184ab85748deb6a71f4503d5ddce74d2d48",
-                "reference": "02f95184ab85748deb6a71f4503d5ddce74d2d48",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/e5eebc3cc28d12fea86154341c8139792a086354",
+                "reference": "e5eebc3cc28d12fea86154341c8139792a086354",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-07-12 00:30:14"
+            "time": "2016-07-12 23:49:38"
         }
     ],
     "packages-dev": [],
