@@ -104,6 +104,7 @@ class Bootstrap
             D($_file);
         }
 
+        $_GET = req('Get');
 //实例化
         $controller = new $__controllerAction();
 
